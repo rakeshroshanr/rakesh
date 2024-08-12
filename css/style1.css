@@ -1,0 +1,79 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box; word-wrap: break-word;}
+.icon{
+    display: grid;
+    grid-template-columns: auto 35%;
+    column-gap: 30px;
+    padding: 10px 0px; 
+    background: rgb(240, 216, 173);
+}
+.ileft span{font-size: 25px; padding: 10px 30px;}
+.iright span{font-size: 20px; padding: 10px 10px;}
+.header{padding: 45px; color: brown; text-align: center; background: rgb(240, 220, 184);
+font-size: 5vw;
+}
+.nav{ background: rgb(196, 170, 123); }
+.nav ul{list-style: none; overflow: hidden;}
+.nav li{float: left; padding: 15px 30px;}
+.nav li a{text-decoration: none; padding: 15px 30px;}
+.nav li:hover{background: orange;}
+.nav li a:hover{ color: whitesmoke;}
+.center{
+    display: grid;
+    grid-template-columns: 25% auto;
+    column-gap: 20px;
+}
+.top{grid-column: 1/3; padding: 40px; text-align: center; font-size: 3vw;}
+.cleft ul{list-style: none; margin-top: 30px;}
+.cleft li{width: 90%; margin: 0px 5%; text-align: center; border: 1px solid orange; padding: 12px 0px;}
+.cleft #mycat{font-size: 2vw; background: orangered;}
+
+.product{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    margin-top: 30px;
+}
+.prow{border: 1px solid orange;}
+.prow img{height: auto; max-width: 100%;}
+.data{padding: 20px; text-align: justify; line-height: 28px;}
+.data button{padding: 9px 10px; background: orange; margin-top: 10px;}
+.footer{padding: 20px; text-align: center; background: black; color: white; font-size: 2vw;}
+
+
+@media only screen and (max-width:1200px){
+    .nav li{float: left; padding: 15px 20px;}
+    .nav li a{text-decoration: none; padding: 15px 20px;}
+}
+
+@media only screen and (max-width:992px){
+    .icon{
+        grid-template-columns: auto 50%;  
+    }
+    .nav li{float: left; padding: 15px 10px;}
+    .nav li a{text-decoration: none; padding: 15px 10px;}
+    .center{
+        grid-template-columns: 40% auto;
+    
+    }
+    .product{
+
+        grid-template-columns:auto auto;
+   
+    }
+
+
+}
+@media only screen and (max-width:768px){
+    .icon{display: none;}
+    .nav li{float: none; text-align: center;}
+    .center{
+        grid-template-columns:auto;
+    }
+    .top{grid-column: 1/2; }
+    .product{
+
+        grid-template-columns:auto;
+    }
+    .prow{text-align: center;}
+    .data{text-align: center;}
+}
